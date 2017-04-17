@@ -29,11 +29,9 @@ public class GUIDemo extends JFrame
         smallerButton = new JButton("SMALLER");
         biggerButton.addActionListener(new ButtonHandler());
         smallerButton.addActionListener(new ButtonHandler());
-
         add(panel);
         panel.add(biggerButton);
         panel.add(smallerButton);
-
         setVisible(true);
     }
 
@@ -41,8 +39,8 @@ public class GUIDemo extends JFrame
      * This inner class exists to handle button events. There are other ways
      * this could have been done:
      * 
-     * 1. GUIDemo could implement ActionListener itself. 
-     * 2. Anonymous inner classes could be used to hand the events.
+     * 1. GUIDemo could implement ActionListener itself. 2. Anonymous inner
+     * classes could be used to hand the events.
      */
     private class ButtonHandler implements ActionListener
     {
